@@ -1,0 +1,9 @@
+
+body{overflow-x: hidden;}
+#login-area{
+    margin-top: 5rem;
+    background: #eee;
+    box-shadow: .5rem .5rem 2rem gray;
+    padding:3rem;
+}
+#transaction-area{display: none;}
