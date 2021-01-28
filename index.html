@@ -29,30 +29,37 @@
     <div class="container">
         <div class="row mt-5 d-flex justify-content-center">
             <h1 class="text-center text-success display-4 my-5">Your Account</h1>
-            <div class="col-md-3 bg-success text-center text-light p-5 m-4">
+
+            <div class="col-md-3 bg-success text-center text-light p-5 m-4 rounded">
                 <h4>Deposit</h4>
-                <h2>$ <span id="deposit"></span></h2>
+                <h2>$ <span id="current-deposit">00</span></h2>
             </div>
-            <div class="col-md-3 bg-info text-light text-center p-5 m-4">
+
+            <div class="col-md-3 bg-info text-light text-center p-5 m-4 rounded">
                 <h4>Withdraw</h4>
-                <h2>$ <span id="deposit"></span></h2>
+                <h2>$ <span id="current-withdraw">00</span></h2>
             </div>
-            <div class="col-md-3 bg-warning text-center text-light p-5 m-4">
+
+            <div class="col-md-3 bg-warning text-center text-light p-5 m-4 rounded">
                 <h4>Balance</h4>
-                <h2>$<span id="deposit"> 500</span></h2>
+                <h2>$<span id="current-balance"> 500</span></h2>
             </div>
+
         </div>
         <div class="row mt-5 d-flex justify-content-center mb-5">
+
             <div class="col-md-5 bg-light shadow p-5 m-3">
                 <h3>Deposit</h3>
-                <input class="form-control" type="text" placeholder="Enter Your Amount"><br>
-                <button class="btn btn-success">Submit</button>
+                <input id="deposit-amount" class="form-control" type="text" placeholder="Enter Your Amount"><br>
+                <button id="deposit" class="btn btn-success">Submit</button>
             </div>
+
             <div class="col-md-5 bg-light shadow p-5 m-3">
                 <h3>Withdraw</h3>
-                <input class="form-control" type="text" placeholder="Enter Your Amount"><br>
-                <button class="btn btn-success">Submit</button>
+                <input id="withdraw-amount" class="form-control" type="text" placeholder="Enter Your Amount"><br>
+                <button id="withdraw" class="btn btn-success">Submit</button>
             </div>
+
         </div>
     </div>
 </div>
